@@ -1,0 +1,22 @@
+# HELP vmhealth_endpoints_total The number of configured endpoints grouped by type for this region
+# TYPE vmhealth_endpoints_total counter
+vmhealth_endpoints_total{type="storage"} <%= @checks[:storage][:total] %>
+vmhealth_endpoints_total{type="alert"} <%= @checks[:alert][:total] %>
+vmhealth_endpoints_total{type="insert"} <%= @checks[:insert][:total] %>
+vmhealth_endpoints_total{type="select"} <%= @checks[:select][:total] %>
+vmhealth_endpoints_total{type="agent"} <%= @checks[:agent][:total] %>
+vmhealth_endpoints_total{type="minerva"} <%= @checks[:minerva][:total] %>
+vmhealth_endpoints_total{type="grafana"} <%= @checks[:grafana][:total] %>
+vmhealth_endpoints_total{type="proxy"} <%= @checks[:proxy][:total] %>
+
+# HELP vmhealth_endpoints_available The count of reachable endpoints grouped by type for this region
+# TYPE vmhealth_endpoints_available counter
+vmhealth_endpoints_available{type="storage"} <%= @checks[:storage][:available] %>
+vmhealth_endpoints_available{type="alert"} <%= @checks[:alert][:available] %>
+vmhealth_endpoints_available{type="insert"} <%= @checks[:insert][:available] %>
+vmhealth_endpoints_available{type="select"} <%= @checks[:select][:available] %>
+vmhealth_endpoints_available{type="agent"} <%= @checks[:agent][:available] %>
+vmhealth_endpoints_available{type="minerva"} <%= @checks[:minerva][:available] %>
+vmhealth_endpoints_available{type="grafana"} <%= @checks[:grafana][:available] %>
+vmhealth_endpoints_available{type="proxy"} <%= @checks[:proxy][:available] %>
+

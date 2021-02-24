@@ -1,0 +1,25 @@
+---
+  storage:
+    - http://vmstorage01.eu-west-2.nexmo.xxx:8482/metrics
+    - http://vmstorage02.eu-west-2.nexmo.xxx:8482/metrics
+    - http://vmstorage03.eu-west-2.nexmo.xxx:8482/metrics
+  alert:
+    - http://alert.victoriametrics.nexmo-eks-sre-1.eu-west-2.nexmo.vip/metrics
+  insert:
+    - http://insert.victoriametrics.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+  select:
+    - http://select.victoriametrics.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+  agent:
+    - http://vmagent-ap-southeast-1.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+    - http://vmagent-eu-central-1.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+    - http://vmagent-eu-west-2.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+    - http://vmagent-softlayer.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+    - http://vmagent-us-east-1.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+    - http://vmagent-us-west-2.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/metrics
+  proxy:
+    - http://nexmo-vmproxy.nexmo-eks-sre-1.eu-west-2.nexmo.xxx/api/v1/label/dc/values
+  minerva:
+    - http://minerva01.nexmo.vip/new/graph
+  grafana:
+    - https://grafana01.nexmo.vip/health
+
